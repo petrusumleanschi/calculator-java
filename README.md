@@ -1,4 +1,4 @@
-# calculator-java
+# project-java
 simple calculator written in Java; supports addition, subtraction, multiplication and division
 Calculul metricii LOC:
 - Pentru fisierul calculator LOC=188, Linii utile de cod (fara comentarii) = 129;
