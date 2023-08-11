@@ -12,5 +12,7 @@ Pentru complexitatea ciclomatica:
        Complexitatea ciclomatica a metodei Calculate deasemenea este egala cu 12;
   Conform schemei elaborate de Thomas McCabe acest indicator indica o complexitate de cod moderat complex.
 
-   
+   Pentru complexitatea cognitiva:
+  - Pentru metoda evaluateExpressiom complexitatea cognitiva este egala cu 14;
+  - Pentru metoda Calculate complexitatea cognitiva este egala cu 23;
   
