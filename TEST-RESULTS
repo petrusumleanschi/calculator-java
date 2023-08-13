@@ -1,0 +1,79 @@
+Testarea BLACK BOX:
+1. Rezultatul primit la introducerea unui string:
+   Rezultat asteptat: ERROR
+   Rezultat primit: ERROR;
+2. String + o valoare numerica:
+   Rezultat asteptat: ERROR;
+   Rezultat primit: ERROR;
+3. Introducerea valorii 0:
+    Rezultat asteptat: 0;
+    Rezultat primit: 0;
+4. Introducerea unei singure valori numerice atit pozitive cit si negative:
+    Rezultat asteptat: Valoarea introdusa;
+    Rezultat primit: Valoarea introdusa;
+5. Introducerea unei operatii de adunare: 5+4
+    Rezultat asteptat: 9;
+    Rezultat primit: 9;
+6. Introducerea unei operatii de scadere: 19-16
+    Rezultat asteptat: 3;
+    Rezultat primit: 3;
+7. Introducerea unei operatii de scadere cu rezultat negativ: 19-22
+    Rezultat asteptat: -3;
+    Rezultat primit: -3;
+8. Introducerea unei operatii inmultire: 14*20
+    Rezultat asteptat: 280;
+    Rezultat primit: 280;
+9. Introducerea unei operatii de impartire: 205/5
+    Rezultat asteptat: 41;
+    Rezultat primit: 41;  cu valori zecimale deasemenea lucreaza ok
+10. Introducerea unei operatii cu + si - complexe: 5+16-19+9
+    Rezultat asteptat: 11;
+    Rezultat primit: 11;
+11. Introducerea unei operatii complexe cu * si /: 15*4/2
+Rezultat asteptat: 30;
+Rezultat primit:30;
+12. Introducerea unei operatii complexe: 12*5-6*2+4/2
+Rezultat asteptat: 50;
+Rezultat primit: 50;
+13. Inmultirea cu o valoare negativa: 9*-6
+Rezultat asteptat: -54;
+Rezultat primit: Error;
+14. Am incercat o serie de operatiuni +, -, *, / cu zecimale si am identificat ca sistemul functioneaza corect;
+15. Ultilizarea operatiunilor cu paranteze: (4*3)-(4*2)
+Rezultat asteptat: 4;
+Rezultat primit: ERROR;
+16. Indiferent de operatiune, daca valorile sunt specificate intre paranteze sistemul genereaza o eroare;
+16. Operatiuni cu cifre mai mari: 15000*350
+Rezultat asteptat: 5250000;
+Rezultat primit: 5250000;
+
+Observatie:
+Sistemul nu poate genera rezultat pentru valori specificate intre paranteze;
+Sistemul nu poate genera un rezultat daca valoarea dupa semnul operatiei este cu minus: 4*-3; 3/-3; 5+-2
+
+
+TEST UNITAR:
+
+public class Test {
+    public static void main(String[] args) {
+        test();
+    }
+    public static void test() {
+        String Expression = "21/7";
+        String expected_result = "3.0";
+        Calculator actual_result = new Calculator();
+
+        Calculator.Run(Expression);
+
+        String textResult = Float.toString(actual_result.finalResult);
+
+        if (expected_result.equals(textResult)) {
+            System.out.println ("testul a fost trecut cu succes");
+        } else {
+            System.out.println ("test esuat");
+        }
+    }
+}
+
+    
+    
